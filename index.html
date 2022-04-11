@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Cadastro do Usuário</h1>
+      </header>
+  
+      <section>
+        <div class="form">
+            <div id="nome">
+                <p class="info-nome">Como você se chama? </p>              
+                <input type="text" name="txtnome" id="txtnome" />
+                <input type="button" value="cadastrar" class="button"  onclick="cadnome()"/>
+            </div>
+            <div class="oculto" id="idade">
+                <p class="info-idade">Quantos anos você tem?</p>             
+                <input type="number" name="txtidade" id="txtidade" min="0" />
+                <input type="button" value="cadastrar" class="button"  onclick="cadidade()">
+            </div>          
+            <div class="oculto" id="linguagem">
+                <p class="info-linguagem">Qual linguagem de programação você está estudando?</p>
+                <input type="text" name="txtlinguagem" id="txtlinguagem" />
+                <input type="button" value="cadastrar" class="button" onclick="cadlinguagem()">
+            </div>          
+        </div>
+        <div id="res">
+          
+        </div>
+      </section>
+      
+      <script src="script.js"></script>
+    </body>
+  </html>
+    
+</body>
+</html>
